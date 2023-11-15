@@ -6,7 +6,7 @@
     
     목적 :  데이터 상에서 가장 큰 상해정도인 ‘중상’ 사고자가 발생한 사건을 분석하여 PM사고의 상해를 줄이기 위한 지표를 확보한다
     ### 관련 파일 
-    📂 pyda_team6 
+📂 pyda_team6 
     │
     ├─ 📂 data_visualization
     │  └─ serious_injury_accident_visualization.py
