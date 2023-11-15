@@ -18,8 +18,7 @@
     │  └─ data_load.py
     │
     ├─ 📂 resource 
-    │  └─ Integrated_damage_data.xlsx
-    
+    │  └─ Integrated_damage_data.xlsx    
     │
     └─ 📂 run
        └─ injury_analyze.py
