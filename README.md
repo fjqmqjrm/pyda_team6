@@ -2,7 +2,7 @@
     파이썬을 이용한 데이터사이언스 캡스톤디자인 연계실습 6조의 레포지토리입니다.
 ## 발전정도 
 ### 1. 중상사고 분석
-        목적 :  데이터 상에서 가장 큰 상해정도인 ‘중상’ 사고자가 발생한 사건을 분석하여 PM사고의 상해를 줄이기 위한 지표를 확보한다
+        목적 :  데이터 상에서 가장 큰 상해정도인 ‘중상’ 사고자가 발생한 사건을 분석하여 PM사고의 상해를 줄이기 위한 지표를 확보하고 시각화한다.
 ### 중상사고 분석 - 관련 파일 
 ```css
 📂 pyda_team6 
@@ -21,6 +21,27 @@
     │
     └─ 📂 run
        └─ injury_analyze.py
+```
+### 2. 사고유형별 분석
+        목적 :  차대차, 차대사람, 차량단독 이 세가지로 나누어서 나이대별 사고 빈도를 분석하여 사고유형별로 어떤 나이대에서 사고 빈도수가 높은지를 파악하고 시각화한다.
+### 중상사고 분석 - 관련 파일 
+```css
+📂 pyda_team6 
+    │
+    ├─ 📂 data_visualization
+    │  └─ accident_type.py
+    │  
+    ├─ 📂 data_analysis
+    │  └─ accident_type.py 
+    │
+    ├─ 📂 data_processing 
+    │  └─ data_load.py
+    │
+    ├─ 📂 resource 
+    │  └─ Integrated_damage_data.xlsx    
+    │
+    └─ 📂 run
+       └─ accident_type_age_analyze.py
 ```
 ### 커밋 컨벤션
 
