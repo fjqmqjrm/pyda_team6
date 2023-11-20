@@ -13,6 +13,3 @@ def extract_violation_for_serious_injury(df):
     serious_injury_df = df[df['중상자수'] > 0]
     violation_series = serious_injury_df['법규위반']
     return violation_series
-
-
-
