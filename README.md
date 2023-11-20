@@ -50,10 +50,10 @@
 📂 pyda_team6 
     │
     ├─ 📂 data_visualization
-    │  └─ serious_injury_accident_visualization.py
+    │  └─ trafficlaw_violation__visualization.py
     │
     ├─ 📂 data_analysis
-    │  └─ erious_injury_accident.py 
+    │  └─ trafficlaw_violation_analysis.py 
     │
     ├─ 📂 data_processing 
     │  └─ data_load.py
@@ -62,7 +62,7 @@
     │  └─ Integrated_damage_data.xlsx    
     │
     └─ 📂 run
-       └─ injury_analyze.py
+       └─ trafficlaw_violation_run.py
 ```
 ### 4. 교통사고 발생 월별, 행정구역별 빈도 분석
         목적 :  법규 위반 단속에 투입되는 인력을 효율적으로 배치하기 위해 일년 중 가장 많이 발생하는 시기와 그 시기의 행정구역에 대해 조사하고자 한다.
@@ -71,10 +71,10 @@
 📂 pyda_team6 
     │
     ├─ 📂 data_visualization
-    │  └─ serious_injury_accident_visualization.py
+    │  └─ trafficlaw_violation__visualization.py
     │
     ├─ 📂 data_analysis
-    │  └─ erious_injury_accident.py 
+    │  └─ trafficlaw_violation_analysis.py 
     │
     ├─ 📂 data_processing 
     │  └─ data_load.py
@@ -83,7 +83,7 @@
     │  └─ Integrated_damage_data.xlsx    
     │
     └─ 📂 run
-       └─ injury_analyze.py
+       └─ trafficlaw_violation_run.py
 ```
 ### 커밋 컨벤션
 
