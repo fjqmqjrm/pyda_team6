@@ -45,4 +45,3 @@ def plot_horizontal_bar_chart(dataframe, x_column, y_column, title, xlabel, ylab
 
     # 그래프 출력
     plt.show()
-
