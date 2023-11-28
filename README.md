@@ -7,7 +7,7 @@
 ```css
 📂 pyda_team6 
     │
-    ├─ 📂 data_visualization
+    ├─ 📂 data_visualization 
     │  └─ serious_injury_accident_visualization.py
     │
     ├─ 📂 data_analysis
