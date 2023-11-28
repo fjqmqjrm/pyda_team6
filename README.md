@@ -85,6 +85,31 @@
     └─ 📂 run
        └─ trafficlaw_violation_run.py
 ```
+### 5. 강남구 지하철 역 근처 PM 교통사고 건수에 따른 분석 보고
+        목적 : 서울 지하철 역 주변의 교통사고 건수와 역과의 거리 간의 관계를 조사하고, 교통사고와 지역 특성의 상관 관계를 확인하는 것이다. 이를 통해 캡스톤디자인2에서 교통 안전성과 지하철 역 주변 환경의 특성을 연관 짓고자 힌디.
+ 데이터 불러오기: data_load_distance 함수를 사용하여 데이터를 불러옴
+ KMeans 클러스터링: kmeans_clustering 함수를 사용하여 거리에 따른 클러스터를 형성
+ 시각화: 클러스터링 결과와 'pm 교통사고 건수'를 고려하여 pair plot을 그림
+
+### 강남구 지하철 역 근처 PM 교통사고 건수에 따른 분석 보고 - 관련 파일 
+```css
+📂 pyda_team6 
+    │
+    ├─ 📂 data_visualization
+    │  └─ pair_plot_distance.py
+    │
+    ├─ 📂 data_analysis
+    │  └─ kmeans_clustering_distance.py 
+    │
+    ├─ 📂 data_processing 
+    │  └─ data_load.py
+    │
+    ├─ 📂 resource 
+    │  └─ number_distance.xlsx    
+    │
+    └─ 📂 run
+       └─ distance_clustering_run.py
+```
 ### 커밋 컨벤션
 
 - feat : 새로운 기능 추가
@@ -94,5 +119,4 @@
 - refactor : 코드 리펙토링
 - test : 테스트 코드, 리펙토링 테스트 코드 추가
 - chore : 빌드 업무 수정, 패키지 매니저 수정
-
 
