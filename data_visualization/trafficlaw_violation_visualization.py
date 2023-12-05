@@ -25,12 +25,12 @@ def monthly_count_visualization(df):
     plt.title('발생월별 빈도 분석')
     plt.show()
 
-# 4월, 6월의 교통사고량 상위 3위 행정구역 시각화
+# 4월, 7월의 교통사고량 상위 3위 행정구역 시각화
 def district_count_visualization(df):
     top3 = df.head(3)
     plt.figure(figsize=(10, 6))
     plt.bar(top3.index, top3.values, color='gray')
     plt.xlabel('발생동')
     plt.ylabel('교통사고 발생 건수')
-    plt.title('4월, 6월의 행정구역 빈도 분석')
+    plt.title('4월, 7월의 행정구역 빈도 분석')
     plt.show()

@@ -18,12 +18,12 @@ def monthly_count(df):
     monthly_count_df = df['사고일시'].dt.month.value_counts().sort_index()
     return monthly_count_df
 
-# 교통사고량이 급격히 증가하는 4월, 6월의 행정구역 빈도 분석
+# 교통사고량이 급격히 증가하는 4월, 7월의 행정구역 빈도 분석
 def district_count(df):
     # "사고일시" 컬럼을 datetime 형식으로 변환
     df['사고일시'] = pd.to_datetime(df['사고일시'], format='%Y년 %m월 %d일 %H시')
-    # 4월, 6월만 추출한 후, 행정구역 빈도 분석
-    district_count_df = df[(df['사고일시'].dt.month == 4) | (df['사고일시'].dt.month == 6)]
+    # 4월, 7월만 추출한 후, 행정구역 빈도 분석
+    district_count_df = df[(df['사고일시'].dt.month == 4) | (df['사고일시'].dt.month == 7)]
     df['동'] = df['시군구'].str[-4:]
     district_count_df = df['동'].value_counts()
     return district_count_df

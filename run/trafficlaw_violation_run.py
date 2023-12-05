@@ -19,7 +19,7 @@ top3_violations_byPM(df1)
 df2 = monthly_count(df)
 monthly_count_visualization(df2)
 
-# 교통사고량이 급격히 증가하는 4월, 6월의 행정구역 빈도 분석
+# 교통사고량이 급격히 증가하는 4월, 7월의 행정구역 빈도 분석
 df3 = district_count(df)
-# 4월, 6월의 교통사고량 상위 3위 행정구역 시각화
+# 4월, 7월의 교통사고량 상위 3위 행정구역 시각화
 district_count_visualization(df3)
