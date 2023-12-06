@@ -36,7 +36,7 @@ def apriori_frequencyAnalysis(df):
     df['동'] = df['시군구'].str[-4:]
     apriori_df = df[(df['사고일시'].dt.month == 4) | (df['사고일시'].dt.month == 7)]
     apriori_df = apriori_df[apriori_df['동'].isin([' 역삼동', ' 논현동', ' 대치동'])]
-    # apyori 함수를 사용하여 apriori_df 에서 '사고내용', '사고유형', '법규위반', '도로형태' 컬럼을 중심으로 연관 규칙을 찾고, 결과를 results에 저장
+    # apyori 함수를 사용하여 apriori_df 에서 '사고내용', '사고유형', '법규위반', '도로형태' 컬럼을 중심으로 연관 규칙을 탐색
     apriori_df = apriori_df[['사고내용', '사고유형', '법규위반', '도로형태']].values.tolist()
     results = list(apriori(apriori_df, min_support=0.3, min_confidence=0.5))
     return results
