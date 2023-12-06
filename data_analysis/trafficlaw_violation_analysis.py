@@ -1,4 +1,5 @@
 import pandas as pd
+from apyori import apriori
 
 # 가해운전자 차종이 PM인 경우의 데이터를 추출
 def perpetrator_PM(df):
@@ -27,3 +28,15 @@ def district_count(df):
     df['동'] = df['시군구'].str[-4:]
     district_count_df = df['동'].value_counts()
     return district_count_df
+
+# 발생월별/행정구역 빈도분석 결과로 연관규칙분석
+def apriori_frequencyAnalysis(df):
+    # 4월, 7월만 추출, 역삼동, 논현동, 대치동만 추출
+    df['사고일시'] = pd.to_datetime(df['사고일시'], format='%Y년 %m월 %d일 %H시')
+    df['동'] = df['시군구'].str[-4:]
+    apriori_df = df[(df['사고일시'].dt.month == 4) | (df['사고일시'].dt.month == 7)]
+    apriori_df = apriori_df[apriori_df['동'].isin([' 역삼동', ' 논현동', ' 대치동'])]
+    # apyori 함수를 사용하여 apriori_df 에서 '사고내용', '사고유형', '법규위반', '도로형태' 컬럼을 중심으로 연관 규칙을 찾고, 결과를 results에 저장
+    apriori_df = apriori_df[['사고내용', '사고유형', '법규위반', '도로형태']].values.tolist()
+    results = list(apriori(apriori_df, min_support=0.3, min_confidence=0.5))
+    return results
