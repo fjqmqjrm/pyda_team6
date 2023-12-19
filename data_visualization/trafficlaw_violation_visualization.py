@@ -16,7 +16,7 @@ def top3_violations_byPM(df):
     plt.title('교통사고 발생률을 높이는 PM 운전자의 교통법규위반 Top3')
     plt.show()
 
-# 발생월별 빈도 분석 시각화
+# <3-2> 발생월별 빈도 분석 시각화
 def monthly_count_visualization(df):
     plt.figure(figsize=(10, 6))
     plt.bar(df.index, df.values, color='skyblue')

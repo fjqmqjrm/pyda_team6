@@ -25,7 +25,7 @@ df3 = district_count(df)
 # <3-2> 4월, 7월의 교통사고량 상위 3위 행정구역 시각화
 district_count_visualization(df3)
 
-# <3-3> 발생월별/행정구역 빈도분석 결과로 연관규칙분석
+# <3-3> 발생월별/행정구역 빈도분석 결과로 연관규칙 분석
 results = apriori_frequencyAnalysis(df)
 for res in results:
     print(res)

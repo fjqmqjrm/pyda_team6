@@ -11,7 +11,7 @@ def freq_violation(df):
     freq_violation_df = df['법규위반'].value_counts()
     return freq_violation_df
 
-# <3-2> 발생월별 빈도 분석 및 시각화
+# <3-2> 발생월별 빈도 분석
 def monthly_count(df):
     # "사고일시" 컬럼을 datetime 형식으로 변환
     df['사고일시'] = pd.to_datetime(df['사고일시'], format='%Y년 %m월 %d일 %H시')
@@ -29,7 +29,7 @@ def district_count(df):
     district_count_df = df['동'].value_counts()
     return district_count_df
 
-# <3-3> 발생월별/행정구역 빈도분석 결과로 연관규칙분석
+# <3-3> 발생월별/행정구역 빈도분석 결과로 연관규칙 분석
 def apriori_frequencyAnalysis(df):
     # 4월, 7월만 추출, 역삼동, 논현동, 대치동만 추출
     df['사고일시'] = pd.to_datetime(df['사고일시'], format='%Y년 %m월 %d일 %H시')
