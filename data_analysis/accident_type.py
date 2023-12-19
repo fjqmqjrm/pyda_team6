@@ -1,8 +1,6 @@
 import pandas as pd
 import warnings
-
-from pandas.errors import SettingWithCopyWarning
-
+from pandas.core.common import SettingWithCopyWarning
 
 from pyda_team6.data_processing.data_load import data_load
 
