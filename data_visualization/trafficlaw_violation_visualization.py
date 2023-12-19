@@ -6,7 +6,7 @@ font_path = "C:/Windows/Fonts/malgun.ttf"  # 사용자 환경에 맞게 폰트 �
 font_name = font_manager.FontProperties(fname=font_path).get_name()
 rc('font', family=font_name)
 
-# 가장 많이 발생한 상위 3위 법규 위반 형태 시각화
+# <3-1> 가장 많이 발생한 상위 3위 법규 위반 형태 시각화
 def top3_violations_byPM(df):
     top3 = df.head(3)
     plt.figure(figsize=(10, 6))
@@ -25,7 +25,7 @@ def monthly_count_visualization(df):
     plt.title('발생월별 빈도 분석')
     plt.show()
 
-# 4월, 7월의 교통사고량 상위 3위 행정구역 시각화
+# <3-2> 4월, 7월의 교통사고량 상위 3위 행정구역 시각화
 def district_count_visualization(df):
     top3 = df.head(3)
     plt.figure(figsize=(10, 6))
